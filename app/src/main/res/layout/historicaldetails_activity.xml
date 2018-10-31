@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/recordMapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.amap.api.maps.MapView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#fff"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运动距离:"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/sportDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/distance"
+            android:text="6.68"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/sportDistance"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/sportDistance"
+            android:text="KM" />
+
+        <TextView
+            android:id="@+id/averageSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/distance"
+            android:text="平均配速:"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/aveSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/averageSpeed"
+            android:layout_toRightOf="@id/averageSpeed"
+            android:text="5.54"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/averageSpeed"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/aveSpeed"
+            android:text="km/min" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/averageSpeed"
+            android:text="时长:"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/sportTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/time"
+            android:layout_toRightOf="@id/time"
+            android:text="25.36"
+            android:textSize="25sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="min"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/sportTime"
+            android:layout_alignBaseline="@id/sportTime"
+            />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

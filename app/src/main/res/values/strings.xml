@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="offlinemap">离线地图</string>
+    <string name="mapfollow">地图跟踪</string>
+    <string name="all_offline">所有城市</string>
+    <string name="sport_line">运动轨迹</string>
+    <string name="history_record">历史记录</string>
+    <string name="download_offline">下载管理</string>
+    <string name="city_name">城市名称</string>
+    <string name="city_size">城市大小</string>
+    <string name="download_progress">0%</string>
+    <string name="my_city">当前城市</string>
+    <string name="sso_complete">完成</string>
+    <string name="running">跑步</string>
+    <string name="go">GO!</string>
+    <string name="history">历史记录</string>
+
+</resources>

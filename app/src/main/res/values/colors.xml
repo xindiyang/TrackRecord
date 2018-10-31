@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#21ba33</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="offline_down_title">#909090</color>
+    <color name="offline_head_font">#FFFFFF</color>
+    <color name="grey"> #ebebeb</color>
+    <color name="gary">#898989</color>
+    <color name="taobao_black">#333333</color>
+    <color name="offline_down_size">#777777</color>
+    <color name="gray_lite">#c5c5c5</color>
+</resources>

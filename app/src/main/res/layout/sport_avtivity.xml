@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/sport"/>
+    <TextView
+        android:id="@+id/record"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:paddingLeft="8dp"
+        android:gravity="center"
+        android:text="@string/history_record" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:textColor="#22e414"
+        android:text="@string/sport_line"
+        app:layout_constraintEnd_toStartOf="@+id/offlineMap"
+        app:layout_constraintStart_toEndOf="@+id/record" />
+
+    <TextView
+        android:id="@+id/offlineMap"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:paddingRight="8dp"
+        android:text="@string/download_offline"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/offlineMap"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="31dp">
+    </com.amap.api.maps.MapView>
+
+    <com.example.codoon.myapplication.Util.SportMyView
+        android:visibility="gone"
+        android:id="@+id/sportMyView"
+        android:layout_width="162dp"
+        android:layout_height="154dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+    <com.example.codoon.myapplication.Util.SuspendedView
+        android:id="@+id/suspendedView"
+        android:layout_width="wrap_content"
+        android:layout_height="156dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="@+id/guideline3" />
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+</android.support.constraint.ConstraintLayout>
